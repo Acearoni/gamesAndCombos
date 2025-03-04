@@ -3,7 +3,7 @@ import axios from 'axios';
 
 
 const DisplayAllGames = () => { //Passing {games, setGames } through props when accessing state is needed with multiple components.
-    const [games, setGames] = useState([]); //Used when only needing access within Display All
+    const [games, setGames] = useState([]); //Used when only needing access within Display All, will store an array of Games
 
     useEffect(() => {
         axios.get('http://localhost:8000/api/findAllGames')
